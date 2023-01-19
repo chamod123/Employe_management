@@ -6,6 +6,7 @@
         <br>
         <div class="row">
             <h3 class="col-md-6" style="color: blue">Add New Employee</h3>
+            <div class="col-md-6"><a href="/Employee" class="btn btn-info">View Employee List</a></div>
 
         </div>
 

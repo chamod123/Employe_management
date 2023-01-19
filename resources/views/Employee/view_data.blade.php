@@ -6,6 +6,7 @@
         <br>
         <div class="row">
             <h1 class="col-md-6" style="color: blue">Employee Profile</h1>
+            <div class="col-md-6"><a href="/Employee/{{$employee->emp_no}}/Edit" class="btn btn-success">Edit Employee</a></div>
         </div>
 
         <div class="form-group row">
