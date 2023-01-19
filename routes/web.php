@@ -19,4 +19,7 @@ use App\Http\Controllers\EmployeeController;
 //});
 
 
-Route::get('Employee', [EmployeeController::class, 'index']);
+Route::get('/Employee', [EmployeeController::class, 'index']);
+Route::get('/Employee/NewEmployee', [EmployeeController::class, 'create']);
+
+Route::post('/Employee/Save', [EmployeeController::class, 'store']);

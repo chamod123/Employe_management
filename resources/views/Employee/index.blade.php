@@ -3,7 +3,13 @@
 
 
     <div class="container">
-        <h1>Employee s</h1>
+        <br>
+        <div class="row">
+            <h1 class="col-md-6" style="color: blue">Employee Details</h1>
+            <div class="col-md-6"><a href="/Employee/NewEmployee" class="btn btn-success">Add New Employee</a></div>
+        </div>
+
+
 
         <table class="table">
             <thead>
