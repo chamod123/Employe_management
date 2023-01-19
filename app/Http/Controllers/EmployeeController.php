@@ -6,6 +6,7 @@ use App\Models\EmployeesModel;
 use App\Models\SalariesModel;
 use App\Models\TitlesModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class EmployeeController extends Controller
 {
@@ -18,11 +19,31 @@ class EmployeeController extends Controller
             ]);
     }
 
-    public function create(){
+    public function create()
+    {
         return view('Employee.create');
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
+
+        $validator = Validator::make($request->all(), [
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'birth_date' => 'required',
+            'gender' => 'required',
+            'hire_date' => 'required',
+            'salary' => 'required',
+            'salary_from_date' => 'required',
+            'salary_to_date' => 'required',
+            'title' => 'required',
+            'designation_from_date' => 'required',
+            'designation_to_date' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->getMessageBag()->toArray()], 200);
+        }
 
         $employee = new EmployeesModel();
         $employee->first_name = $request->first_name;
@@ -47,6 +68,17 @@ class EmployeeController extends Controller
         $titles->save();
 
         return redirect('/Employee');
+    }
+
+    //view employee details
+    public function view_data($emp_no)
+    {
+
+        $employee = EmployeesModel::where('emp_no', '=', $emp_no)
+            ->first();
+        return view('Employee.view_data',
+            ['employee' => $employee
+            ]);
     }
 
 }

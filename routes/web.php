@@ -19,7 +19,14 @@ use App\Http\Controllers\EmployeeController;
 //});
 
 
+//view employee list
 Route::get('/Employee', [EmployeeController::class, 'index']);
+
+//new employee add screen
 Route::get('/Employee/NewEmployee', [EmployeeController::class, 'create']);
 
+//save new employee
 Route::post('/Employee/Save', [EmployeeController::class, 'store']);
+
+//view employee details
+Route::get('/Employee/{id}/View', [EmployeeController::class, 'view_data']);

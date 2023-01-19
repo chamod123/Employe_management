@@ -9,13 +9,13 @@ class EmployeesModel extends Model
 {
     protected $table = 'employees';
 
-    public function employee()
+    public function salary()
     {
-        return $this->hasMany('App\EmployeesModel','emp_no','emp_no');
+        return $this->hasMany('App\Models\SalariesModel','emp_no','emp_no');
     }
 
     public function employee_titles()
     {
-        return $this->hasMany('App\TitlesModel','emp_no','emp_no');
+        return $this->hasMany('App\Models\TitlesModel','emp_no','emp_no');
     }
 }

@@ -11,6 +11,6 @@ class SalariesModel extends Model
 
     public function employee()
     {
-        return $this->belongsTo('App\EmployeesModel','emp_no','emp_no');
+        return $this->belongsTo('App\Models\EmployeesModel','emp_no','emp_no');
     }
 }

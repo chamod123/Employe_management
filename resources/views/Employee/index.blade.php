@@ -19,6 +19,7 @@
                 <th scope="col">Date Of Birth</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Hire Date</th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>
@@ -29,6 +30,7 @@
                     <td>{{$employee->birth_date}}</td>
                     <td>{{$employee->gender}}</td>
                     <td>{{$employee->hire_date}}</td>
+                        <td><a href="/Employee/{{$employee->emp_no}}/View"><i class="fa fa-eye" style="color: #52baff" aria-hidden="true"></i></a></td>
                 </tr>
              @endforeach
 

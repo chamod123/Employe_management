@@ -26,7 +26,7 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">First Name</label>
             <div class="col-sm-10">
-                <input class="form-control" type="text" placeholder="First Name" name="first_name" id="first_name">
+                <input class="form-control" required type="text" placeholder="First Name" name="first_name" id="first_name">
             </div>
         </div>
 
@@ -34,7 +34,7 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">Last Name</label>
             <div class="col-sm-10">
-                <input class="form-control" type="text" placeholder="Last Name" name="last_name" id="last_name">
+                <input class="form-control" required type="text" placeholder="Last Name" name="last_name" id="last_name">
             </div>
         </div>
 
@@ -42,7 +42,7 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">Date Of Birth</label>
             <div class="col-sm-10">
-                <input class="form-control" type="date" placeholder="Date Of Birth" name="birth_date" id="birth_date">
+                <input class="form-control" required type="date" placeholder="Date Of Birth" name="birth_date" id="birth_date">
             </div>
         </div>
 
@@ -50,7 +50,7 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">Hire Date</label>
             <div class="col-sm-10">
-                <input class="form-control" type="date" placeholder="Hire Date" name="hire_date" id="hire_date">
+                <input class="form-control" required type="date" placeholder="Hire Date" name="hire_date" id="hire_date">
             </div>
         </div>
 
@@ -58,7 +58,7 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">Gender</label>
             <div class="col-sm-10">
-                <select class="form-control" name="gender" id="gender">
+                <select class="form-control" required name="gender" id="gender">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
@@ -80,7 +80,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Salary</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="text" placeholder="Salary" name="salary" id="salary">
+                    <input class="form-control" required type="text" placeholder="Salary" name="salary" id="salary">
                 </div>
             </div>
 
@@ -88,7 +88,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">From Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="date" placeholder="From Date" name="salary_from_date" id="salary_from_date">
+                    <input class="form-control" required type="date" placeholder="From Date" name="salary_from_date" id="salary_from_date">
                 </div>
             </div>
 
@@ -96,7 +96,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">To Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="date" placeholder="To Date" name="salary_to_date" id="salary_to_date">
+                    <input class="form-control" required type="date" placeholder="To Date" name="salary_to_date" id="salary_to_date">
                 </div>
             </div>
 
@@ -114,7 +114,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Title</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="text" placeholder="Title" name="title" id="title">
+                    <input class="form-control" required type="text" placeholder="Title" name="title" id="title">
                 </div>
             </div>
 
@@ -122,7 +122,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">From Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="date" placeholder="From Date" name="designation_from_date" id="designation_from_date">
+                    <input class="form-control" required type="date" placeholder="From Date" name="designation_from_date" id="designation_from_date">
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">To Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="date" placeholder="To Date" name="designation_to_date" id="designation_to_date">
+                    <input class="form-control" required type="date" placeholder="To Date" name="designation_to_date" id="designation_to_date">
                 </div>
             </div>
 
