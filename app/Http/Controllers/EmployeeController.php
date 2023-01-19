@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\EmployeesModel;
+use App\Models\SalariesModel;
+use App\Models\TitlesModel;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -30,7 +32,21 @@ class EmployeeController extends Controller
         $employee->hire_date = $request->hire_date;
         $employee->save();
 
-        return $request;
+        $salary = new SalariesModel();
+        $salary->emp_no = $employee->id;
+        $salary->salary = $request->salary;
+        $salary->from_date = $request->salary_from_date;
+        $salary->to_date = $request->salary_to_date;
+        $salary->save();
+
+        $titles = new TitlesModel();
+        $titles->emp_no = $employee->id;
+        $titles->title = $request->title;
+        $titles->from_date = $request->designation_from_date;
+        $titles->to_date = $request->designation_to_date;
+        $titles->save();
+
+        return redirect('/Employee');
     }
 
 }

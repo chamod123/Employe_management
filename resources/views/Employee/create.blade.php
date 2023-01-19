@@ -65,10 +65,87 @@
             </div>
         </div>
 
-        <br>
-        <div class="form-group row">
-            <button type="submit" class="btn btn-success">Save</button>
-        </div>
+
+
+
+
+            {{--salary details--}}
+
+            <hr>
+            <div class="row">
+                <h4>Salary Details</h4>
+            </div>
+
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Salary</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" placeholder="Salary" name="salary" id="salary">
+                </div>
+            </div>
+
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">From Date</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="date" placeholder="From Date" name="salary_from_date" id="salary_from_date">
+                </div>
+            </div>
+
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">To Date</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="date" placeholder="To Date" name="salary_to_date" id="salary_to_date">
+                </div>
+            </div>
+
+
+
+
+            {{--designation details--}}
+
+            <hr>
+            <div class="row">
+                <h4>Designation Details</h4>
+            </div>
+
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" placeholder="Title" name="title" id="title">
+                </div>
+            </div>
+
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">From Date</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="date" placeholder="From Date" name="designation_from_date" id="designation_from_date">
+                </div>
+            </div>
+
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">To Date</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="date" placeholder="To Date" name="designation_to_date" id="designation_to_date">
+                </div>
+            </div>
+
+
+
+
+
+            <hr>
+            <br>
+            <div class="form-group row">
+                <button type="submit" class="btn btn-success" style="width: 100px">Save</button>
+                &nbsp;&nbsp;
+                <a href="/Employee" class="btn btn-warning" style="width: 100px">Cancel</a>
+            </div>
+            <br>
         </form>
     </div>
 @endsection
