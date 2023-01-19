@@ -14,60 +14,61 @@
 
         <form action="/Employee/Save" method="POST" enctype="multipart/form-data" id="FormId">
 
-        @csrf
-        <div class="row">
-            <h4>Employee Profile</h4>
-        </div>
-        <hr>
-        <div class="row">
-            <h4>Profile Details</h4>
-        </div>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">First Name</label>
-            <div class="col-sm-10">
-                <input class="form-control" required type="text" placeholder="First Name" name="first_name" id="first_name">
+            @csrf
+            <div class="row">
+                <h4>Employee Profile</h4>
             </div>
-        </div>
-
-        <br>
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Last Name</label>
-            <div class="col-sm-10">
-                <input class="form-control" required type="text" placeholder="Last Name" name="last_name" id="last_name">
+            <hr>
+            <div class="row">
+                <h4>Profile Details</h4>
             </div>
-        </div>
 
-        <br>
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Date Of Birth</label>
-            <div class="col-sm-10">
-                <input class="form-control" required type="date" placeholder="Date Of Birth" name="birth_date" id="birth_date">
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input class="form-control" required type="text" placeholder="First Name" name="first_name"
+                           id="first_name">
+                </div>
             </div>
-        </div>
 
-        <br>
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Hire Date</label>
-            <div class="col-sm-10">
-                <input class="form-control" required type="date" placeholder="Hire Date" name="hire_date" id="hire_date">
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input class="form-control" required type="text" placeholder="Last Name" name="last_name"
+                           id="last_name">
+                </div>
             </div>
-        </div>
 
-        <br>
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Gender</label>
-            <div class="col-sm-10">
-                <select class="form-control" required name="gender" id="gender">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Date Of Birth</label>
+                <div class="col-sm-10">
+                    <input class="form-control" required type="date" placeholder="Date Of Birth" name="birth_date"
+                           id="birth_date">
+                </div>
             </div>
-        </div>
 
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Hire Date</label>
+                <div class="col-sm-10">
+                    <input class="form-control" required type="date" placeholder="Hire Date" name="hire_date"
+                           id="hire_date">
+                </div>
+            </div>
 
-
+            <br>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Gender</label>
+                <div class="col-sm-10">
+                    <select class="form-control" required name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
 
 
             {{--salary details--}}
@@ -89,7 +90,8 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">From Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" required type="date" placeholder="From Date" name="salary_from_date" id="salary_from_date">
+                    <input class="form-control" required type="date" placeholder="From Date" name="salary_from_date"
+                           id="salary_from_date">
                 </div>
             </div>
 
@@ -97,11 +99,10 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">To Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" required type="date" placeholder="To Date" name="salary_to_date" id="salary_to_date">
+                    <input class="form-control" required type="date" placeholder="To Date" name="salary_to_date"
+                           id="salary_to_date">
                 </div>
             </div>
-
-
 
 
             {{--designation details--}}
@@ -123,7 +124,8 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">From Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" required type="date" placeholder="From Date" name="designation_from_date" id="designation_from_date">
+                    <input class="form-control" required type="date" placeholder="From Date"
+                           name="designation_from_date" id="designation_from_date">
                 </div>
             </div>
 
@@ -131,12 +133,10 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">To Date</label>
                 <div class="col-sm-10">
-                    <input class="form-control" required type="date" placeholder="To Date" name="designation_to_date" id="designation_to_date">
+                    <input class="form-control" required type="date" placeholder="To Date" name="designation_to_date"
+                           id="designation_to_date">
                 </div>
             </div>
-
-
-
 
 
             <hr>

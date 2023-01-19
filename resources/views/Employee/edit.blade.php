@@ -85,7 +85,8 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Salary</label>
                         <div class="col-sm-10">
-                            <input value="{{$salary->salary}}" class="form-control" required type="text" placeholder="Salary" name="salary"
+                            <input value="{{$salary->salary}}" class="form-control" required type="text"
+                                   placeholder="Salary" name="salary"
                                    id="salary">
                         </div>
                     </div>
@@ -94,7 +95,8 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">From Date</label>
                         <div class="col-sm-10">
-                            <input value="{{$salary->from_date}}" class="form-control" required type="date" placeholder="From Date"
+                            <input value="{{$salary->from_date}}" class="form-control" required type="date"
+                                   placeholder="From Date"
                                    name="salary_from_date" id="salary_from_date">
                         </div>
                     </div>
@@ -103,7 +105,8 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">To Date</label>
                         <div class="col-sm-10">
-                            <input value="{{$salary->to_date}}" class="form-control" required type="date" placeholder="To Date" name="salary_to_date"
+                            <input value="{{$salary->to_date}}" class="form-control" required type="date"
+                                   placeholder="To Date" name="salary_to_date"
                                    id="salary_to_date">
                         </div>
                     </div>
@@ -125,7 +128,8 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Title</label>
                         <div class="col-sm-10">
-                            <input value="{{$employee_titles->title}}" class="form-control" required type="text" placeholder="Title" name="title"
+                            <input value="{{$employee_titles->title}}" class="form-control" required type="text"
+                                   placeholder="Title" name="title"
                                    id="title">
                         </div>
                     </div>
@@ -134,7 +138,8 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">From Date</label>
                         <div class="col-sm-10">
-                            <input value="{{$employee_titles->from_date}}" class="form-control" required type="date" placeholder="From Date"
+                            <input value="{{$employee_titles->from_date}}" class="form-control" required type="date"
+                                   placeholder="From Date"
                                    name="designation_from_date" id="designation_from_date">
                         </div>
                     </div>
@@ -143,7 +148,8 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">To Date</label>
                         <div class="col-sm-10">
-                            <input value="{{$employee_titles->to_date}}" class="form-control" required type="date" placeholder="To Date"
+                            <input value="{{$employee_titles->to_date}}" class="form-control" required type="date"
+                                   placeholder="To Date"
                                    name="designation_to_date" id="designation_to_date">
                         </div>
                     </div>
